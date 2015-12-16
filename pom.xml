@@ -16,13 +16,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <distributionManagement>
-    <repository>
-      <id>nexus-gone</id>
-      <name>Local Nexus Repository</name>
-      <url>http://172.16.1.253:8081/nexus/content/repositories/xinguanxi/</url>
-    </repository>
-  </distributionManagement>
 
   <dependencies>
     <dependency>
