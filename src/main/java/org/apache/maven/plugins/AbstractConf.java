@@ -115,6 +115,11 @@ public abstract class AbstractConf extends AbstractMojo {
             File in  = new File(inputFile , f ) ;
             File out  = new File(outputFile , f ) ;
             if(in.isDirectory()){
+
+                if( in.isHidden() ){
+                    continue;
+                }
+
                 if(!out.exists()){
                     out.mkdirs() ;
                 }
